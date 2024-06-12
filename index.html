@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média Unip</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Calcular Exame Unip</h1>
+    <h3>Digite média final: <input id="np1" type="number"></h3>
+    <h3>Digite nota exame: <input id="np2" type="number"></h3>
+    <button class="calculo" onclick="media()"><h3>Calcular Exame</h3></button>
+    <br>
+
+    <script>
+
+        function media(){
+            var np1 = parseFloat(document.getElementById("np1").value);
+            var np2 = parseFloat(document.getElementById("np2").value);
+           
+
+            var media = ((np1 + np2)/2)
+            
+
+            if(media >= 5)
+            alert("Aprovado, Parabéns, Nota: " +media)
+            else
+            alert("Reprovado, Fazer Exame, Nota: " +media)
+
+        }
+
+
+
+    </script>
+</div>  
+
+    
+</body>
+</html>
